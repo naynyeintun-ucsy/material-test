@@ -1,0 +1,15 @@
+<div>
+    <form>
+    <mat-form-field>
+        <input type="text" matInput [matAutocomplete]="auto"  [formControl]="myControl">
+        <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFun" >
+            <mat-option *ngFor="let option of msterOptions| async" [value]="option">
+                {{option.name}}
+            </mat-option>
+        </mat-autocomplete>
+    </mat-form-field>
+</form>
+
+<br>
+Selected Object : {{selectedObject}}
+</div>

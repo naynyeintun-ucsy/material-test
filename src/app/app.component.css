@@ -1,0 +1,43 @@
+/* .toolbar-title {
+  margin: 0 16px  0 16px ;
+}
+
+.navigation-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+
+ 
+
+  .mat-body{
+    width: 100%;
+ 
+  } */
+
+  
+  .mat-body{
+   padding: 20px;
+ 
+  }
+
+  .list-height{
+    height: 100%;
+   
+  }
+
+  .crm-navigation-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 998;
+    justify-content: space-between;
+
+  }
+
+  span {
+    padding: 1rem;
+  }

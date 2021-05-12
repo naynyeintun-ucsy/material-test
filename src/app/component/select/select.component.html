@@ -1,0 +1,36 @@
+<mat-form-field style="margin-left:20px">
+    <mat-label>
+        Topic
+    </mat-label>
+    <mat-select [(value)]="selectedValue">
+        <mat-option value="Angular">Angular</mat-option>
+        <mat-option value="Vue">Vue</mat-option>
+        <mat-option value="React">React</mat-option>
+    </mat-select>
+
+</mat-form-field>
+<mat-form-field>
+    
+    <mat-label>
+        Topic2
+    </mat-label>
+    <mat-select [(value)]="gpSelectedValue">
+        <mat-option>None</mat-option>
+        <mat-optgroup label="Web">
+            <mat-option value="Angular">Angular</mat-option>
+            <mat-option value="Vue">Vue</mat-option>
+            <mat-option value="React">React</mat-option>
+        </mat-optgroup>
+        <mat-optgroup label="Mobile">
+            <mat-option value="ionic">Ionic</mat-option>
+            <mat-option value="react-native">React Native</mat-option>
+            <mat-option value="android">Android</mat-option>
+        </mat-optgroup>
+    </mat-select>
+</mat-form-field>
+<br>
+<mat-label>Topic 1 Selected :</mat-label>
+{{selectedValue}}
+<br>
+<mat-label>Topic 2 Selected :</mat-label>
+{{gpSelectedValue}}
